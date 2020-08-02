@@ -1,0 +1,24 @@
+
+<div class="container main-container">
+
+  <h1>Chat con firebase</h1>
+
+
+  <div class="col-md-12 text-right" *ngIf="chatServ.usuario.uid">
+    <button type="button" class="btn btn-outline-danger"
+            (click)="chatServ.logout()">
+      Salir
+    </button>
+  </div>
+
+  <app-login *ngIf="!chatServ.usuario.uid"></app-login>
+
+  
+
+  <div class="chat-window" *ngIf="chatServ.usuario.uid">
+    <img [src]="chatServ.usuario.foto" class="img-fluid float-right img-circle">
+    <app-chat></app-chat>
+
+  </div>
+
+</div>

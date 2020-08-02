@@ -1,0 +1,104 @@
+.main-container{
+  margin-top: 40px;
+  margin-bottom: 150px;
+}
+
+.puntero{
+  cursor: pointer;
+}
+
+.texto-mensaje{
+  background-color: beige; 
+  border-radius: 10px; 
+  padding: 3px;
+  font-style: oblique;
+  
+}
+
+.author{
+  font-size: x-small;
+}
+
+.chat-window{
+  padding: 10px;
+  width: 300px;
+  height: 410px;
+  overflow: hidden;
+  border: 1px solid #4080FF;
+  border-radius: 20px;
+}
+
+.app-mensajes{
+  overflow-y:scroll;
+  height:270px;
+  /*background:gray;*/
+  padding: 5px;
+}
+
+.img-thumb {
+  width: 50px;
+  height: 50px;
+}
+
+.img-circle {
+  border-radius: 100%;
+  width: 50px;
+}
+
+
+/* Animaciones */
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.app-mensajes::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.app-mensajes::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.app-mensajes::-webkit-scrollbar-button:increment,..app-mensajes::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.app-mensajes::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.app-mensajes::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+.app-mensajes::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
